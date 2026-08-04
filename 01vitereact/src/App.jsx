@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import Chai from "./chai";
 
 function App() {
   return (
-    <h1>CHai aur REACT</h1>
+    <Chai/>
   );
 }
 

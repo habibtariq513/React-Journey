@@ -1,9 +1,24 @@
 function customRender(reactElement, Container) {
+    /*
+    Without Loops:
     const domElement = document.createElement(reactElement.type)
     domElement.innerHTML = reactElement.children
     domElement.setAttribute('href', reactElement.props.href)
     domElement.setAttribute('target', reactElement.props.target)
+
+    // Appending DomElement to Container
+    Container.appendChild(domElement) 
+    */
+
+    // With Loops:
+    const domElement = document.createElement(reactElement.type)
+    domElement.innerHTML = reactElement.children
     
+    for (const p in reactElement.props) {
+        if (p === 'children') continue;            
+        domElement.setAttribute(p, reactElement.props[p])
+    }
+    Container.appendChild(domElement) 
 }
 
 const reactElement = {

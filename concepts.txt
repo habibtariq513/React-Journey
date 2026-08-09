@@ -1,2 +1,3 @@
 *) Reconciliation:
         It is a REACT recursive algorithm that reconsiders which one should be updated by comparing two trees,(one tree of browser - DOM, 2nd is React's tree come from createRoot)
+        It is behind the scene understood as the "Virtual DOM".

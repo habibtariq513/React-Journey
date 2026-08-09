@@ -1,0 +1,2 @@
+*) Reconciliation:
+        It is a REACT recursive algorithm that reconsiders which one should be updated.

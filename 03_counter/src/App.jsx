@@ -16,7 +16,10 @@ function App() {
 
   const addValue = () => {
     if(counter != 20) counter = counter + 1
-    setCounter(counter)
+    setCounter(counter + 1)
+
+    // Important Interview Question:
+    // https://youtu.be/tOYkV6Yhrhs
   }
 
   const remValue = () => {

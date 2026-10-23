@@ -1,7 +1,12 @@
+import Card from "./components/card";
+
 function App() {
   return (
-    <div>My App Component.</div>
+    <div>
+      <Card/>
+    </div>
   );
+  
 }
 
 export default App;

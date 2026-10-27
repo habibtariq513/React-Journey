@@ -1,13 +1,14 @@
-import React from 'react'
+import React from "react";
+import Card from "./Components/Card";
 
 const App = () => {
   return (
-    <div>
-      <div className="card w-96 border border-solid border-red-500">
-        Habib
+    <>
+      <div className="parent p-6 gap-5">
+        <Card user='Habib' />
       </div>
-    </div>
-  )
-}
+    </>
+  );
+};
 
 export default App;

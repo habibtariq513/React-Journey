@@ -1,4 +1,4 @@
-const Card = () => {
+const Card = (props) => {
   return (
     <>
       <div className="card w-96 border border-solid border-white text-center text-6xl p-5 rounded-2xl bg-gray-900 font-bold">
@@ -7,7 +7,7 @@ const Card = () => {
           alt="lion Img"
           className="h-52 w-52 object-cover mx-auto block rounded-full"
         />
-        <h1>Habib</h1>
+        <h1>{props.user}</h1>
         <p className="my-5 mx-0 text-2xl font-light">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, animi.
         </p>
